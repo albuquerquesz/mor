@@ -13,7 +13,7 @@ const images = [
 
 const Galeria = () => {
   return (
-    <section className="py-20 lg:py-28 bg-secondary/30">
+    <section id="galeria" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container">
         {/* Section Header */}
         <motion.div

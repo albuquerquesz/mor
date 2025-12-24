@@ -6,7 +6,7 @@ const CTAFinal = () => {
   const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
-    <section className="py-20 lg:py-28 bg-marsala relative overflow-hidden">
+    <section id="contato" className="py-20 lg:py-28 bg-marsala relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
