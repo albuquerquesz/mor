@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const Hero = () => {
   const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-background pt-24 lg:pt-28">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-background" />
       
@@ -21,19 +20,6 @@ const Hero = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="order-2 lg:order-1 text-center lg:text-left"
           >
-            {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="mb-8"
-            >
-              <img 
-                src={logo} 
-                alt="Artes com a Môr - Costura de Alto Padrão" 
-                className="h-24 lg:h-32 mx-auto lg:mx-0"
-              />
-            </motion.div>
 
             {/* Main Heading */}
             <motion.h1
