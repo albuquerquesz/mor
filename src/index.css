@@ -4,9 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
 @layer base {
   :root {
-    /* Rose Gold, Marsala, Nude palette */
     --background: 350 30% 97%;
     --foreground: 350 45% 15%;
 
@@ -16,23 +58,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 350 45% 15%;
 
-    /* Rose Gold Primary */
     --primary: 352 32% 59%;
     --primary-foreground: 0 0% 100%;
 
-    /* Nude/Beige Secondary */
     --secondary: 350 42% 94%;
     --secondary-foreground: 350 45% 25%;
 
-    /* Muted Nude */
     --muted: 350 25% 92%;
     --muted-foreground: 350 15% 45%;
 
-    /* Rose Gold Accent */
     --accent: 352 32% 59%;
     --accent-foreground: 0 0% 100%;
 
-    /* Marsala */
     --marsala: 350 56% 33%;
     --marsala-foreground: 350 30% 97%;
 
@@ -45,12 +82,10 @@
 
     --radius: 1rem;
 
-    /* Gradients */
     --gradient-rose: linear-gradient(135deg, hsl(352 32% 59%) 0%, hsl(352 40% 70%) 100%);
     --gradient-marsala: linear-gradient(135deg, hsl(350 56% 33%) 0%, hsl(350 50% 40%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(350 30% 97%) 0%, hsl(350 42% 94%) 100%);
 
-    /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(350 30% 70% / 0.25);
     --shadow-elevated: 0 8px 30px -8px hsl(350 30% 60% / 0.3);
     --shadow-glow: 0 0 40px hsl(352 32% 59% / 0.2);

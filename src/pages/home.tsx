@@ -6,7 +6,7 @@ import Galeria from "@/components/sections/Galeria";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Footer from "@/components/sections/Footer";
 
-const Index = () => {
+export const Home = () => {
   return (
     <main className="min-h-screen">
       <Header />
@@ -20,4 +20,3 @@ const Index = () => {
   );
 };
 
-export default Index;
