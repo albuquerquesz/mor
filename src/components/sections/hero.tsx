@@ -6,10 +6,10 @@ export const Hero = () => {
   const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden bg-background pt-24 lg:pt-28">
+    <section id="inicio" className="relative min-h-[80vh] flex items-start overflow-hidden bg-background pt-32 lg:pt-40">
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-background" />
 
-      <div className="container relative z-10 py-12 lg:py-20 flex flex-col items-center justify-center">
+      <div className="container relative z-10 py-12 lg:py-16 flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light"
+            className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto font-light"
           >
             Costura de alto padrão com atenção aos detalhes que fazem toda a diferença.
             Cada peça é única, assim como você.
