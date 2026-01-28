@@ -3,7 +3,7 @@ import { Hero } from "@/components/sections/hero";
 import Diferenciais from "@/components/sections/differentials";
 import { About } from "@/components/sections/about";
 import { Gallery } from "@/components/sections/gallery";
-import { } from "@/components/sections/cta-final";
+import { CTAFinal } from "@/components/sections/cta-final";
 import Footer from "@/components/sections/footer";
 
 export const Home = () => {
