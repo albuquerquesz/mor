@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Contato", href: "#contato" },
 ];
 
-const Header = () => {
+export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -36,11 +36,10 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? "bg-background/80 backdrop-blur-xl shadow-elegant border-b border-primary/10"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+        ? "bg-background/80 backdrop-blur-xl shadow-elegant border-b border-primary/10"
+        : "bg-transparent"
+        }`}
     >
       <div className="container">
         <div className="flex items-center justify-between h-20 lg:h-24">
@@ -62,7 +61,6 @@ const Header = () => {
             />
           </motion.a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link, index) => (
               <motion.a
@@ -83,7 +81,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -95,7 +92,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -130,4 +126,3 @@ const Header = () => {
   );
 };
 
-export default Header;

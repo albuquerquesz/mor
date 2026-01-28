@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Hero = () => {
+export const Hero = () => {
   const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
@@ -64,4 +64,3 @@ const Hero = () => {
   );
 };
 
-export default Hero;

@@ -11,11 +11,10 @@ const images = [
   { src: moodboard4, alt: "Fita métrica elegante" },
 ];
 
-const Galeria = () => {
+export const Gallery = () => {
   return (
     <section id="galeria" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +30,6 @@ const Galeria = () => {
           </p>
         </motion.div>
 
-        {/* Moodboard Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {images.map((image, index) => (
             <motion.div
@@ -57,4 +55,3 @@ const Galeria = () => {
   );
 };
 
-export default Galeria;

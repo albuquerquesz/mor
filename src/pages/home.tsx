@@ -1,10 +1,10 @@
-import Header from "@/components/sections/Header";
-import Hero from "@/components/sections/Hero";
-import Diferenciais from "@/components/sections/Diferenciais";
-import Sobre from "@/components/sections/Sobre";
-import Galeria from "@/components/sections/Galeria";
-import CTAFinal from "@/components/sections/CTAFinal";
-import Footer from "@/components/sections/Footer";
+import { Header } from "@/components/sections/header";
+import { Hero } from "@/components/sections/hero";
+import Diferenciais from "@/components/sections/differentials";
+import { About } from "@/components/sections/about";
+import { Gallery } from "@/components/sections/gallery";
+import { } from "@/components/sections/cta-final";
+import Footer from "@/components/sections/footer";
 
 export const Home = () => {
   return (
@@ -12,8 +12,8 @@ export const Home = () => {
       <Header />
       <Hero />
       <Diferenciais />
-      <Sobre />
-      <Galeria />
+      <About />
+      <Gallery />
       <CTAFinal />
       <Footer />
     </main>
