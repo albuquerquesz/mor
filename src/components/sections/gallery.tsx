@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import moodboard1 from "@/assets/moodboard-1.jpg";
-import moodboard2 from "@/assets/moodboard-2.jpg";
-import moodboard3 from "@/assets/moodboard-3.jpg";
-import moodboard4 from "@/assets/moodboard-4.jpg";
+import moodboard1 from "@public/moodboard-1.jpg";
+import moodboard2 from "@public/moodboard-2.jpg";
+import moodboard3 from "@public/moodboard-3.jpg";
+import moodboard4 from "@public/moodboard-4.jpg";
 
 const images = [
   { src: moodboard1, alt: "Tecido rose gold delicado" },

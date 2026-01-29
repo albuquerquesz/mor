@@ -31,10 +31,8 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Divider */}
           <div className="w-24 h-px bg-border" />
 
-          {/* Credits */}
           <div className="space-y-2 text-muted-foreground text-sm font-light">
             <p>© {new Date().getFullYear()} Artes com a Môr. Todos os direitos reservados.</p>
             <p className="flex items-center justify-center gap-1">
