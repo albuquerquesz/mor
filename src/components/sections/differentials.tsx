@@ -39,7 +39,6 @@ const Diferenciais = () => {
           </p>
         </motion.div>
 
-        {/* Cards Grid */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
           {diferenciais.map((item, index) => (
             <motion.div
@@ -51,17 +50,14 @@ const Diferenciais = () => {
               className="group"
             >
               <div className="glass-card p-8 lg:p-10 h-full text-center hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
-                {/* Icon */}
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
                   <item.icon className="w-7 h-7" strokeWidth={1.5} />
                 </div>
 
-                {/* Title */}
                 <h3 className="text-xl lg:text-2xl font-serif font-medium text-foreground mb-4">
                   {item.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-muted-foreground font-light leading-relaxed">
                   {item.description}
                 </p>
