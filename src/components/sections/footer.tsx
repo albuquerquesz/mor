@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@public/logo.png";
 import { motion } from "framer-motion";
 import { Heart, Instagram } from "lucide-react";
 
