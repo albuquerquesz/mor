@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { Instagram, Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { motion } from "framer-motion";
+import { Heart, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,14 +13,12 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center text-center space-y-8"
         >
-          {/* Logo */}
-          <img 
-            src={logo} 
-            alt="Artes com a Môr" 
+          <img
+            src={logo}
+            alt="Artes com a Môr"
             className="h-20 opacity-80 hover:opacity-100 transition-opacity"
           />
 
-          {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
               href="https://instagram.com"
@@ -42,7 +40,7 @@ const Footer = () => {
             <p className="flex items-center justify-center gap-1">
               Feito com <Heart className="w-4 h-4 text-primary fill-primary" /> por{" "}
               <a
-                href="https://github.com/albuquerquesz"
+                href="https://links.albuquerquesz.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline underline-offset-4"
