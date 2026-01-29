@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
-  const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
+  const whatsappLink = "https://wa.me/+558393113882?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
     <section id="inicio" className="relative min-h-[80vh] flex items-start overflow-hidden bg-background pt-32 lg:pt-40">
@@ -21,7 +21,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight text-foreground mb-8"
+            className="text-4xl md:text-6xl lg:text-7xl font-serif font-medium leading-tight text-foreground mb-8"
           >
             A arte de transformar{" "}
             <span className="text-primary italic">tecidos</span> em{" "}

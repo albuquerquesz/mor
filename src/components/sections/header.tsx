@@ -42,7 +42,7 @@ export const Header = () => {
         }`}
     >
       <div className="container">
-        <div className="flex items-center justify-between h-20 lg:h-24">
+        <div className="flex items-center justify-between h-16 lg:h-24">
           {/* Logo */}
           <motion.a
             href="#inicio"
