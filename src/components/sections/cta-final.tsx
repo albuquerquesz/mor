@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const CTAFinal = () => {
-  const whatsappLink = "https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
+  const whatsappLink = "https://wa.me/+558393113882?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20costura.";
 
   return (
     <section id="contato" className="py-20 lg:py-28 bg-marsala relative overflow-hidden">
