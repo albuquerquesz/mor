@@ -13,12 +13,6 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center text-center space-y-8"
         >
-          <img
-            src={logo}
-            alt="Artes com a Môr"
-            className="h-20 opacity-80 hover:opacity-100 transition-opacity"
-          />
-
           <div className="flex items-center gap-4">
             <a
               href="https://instagram.com"
